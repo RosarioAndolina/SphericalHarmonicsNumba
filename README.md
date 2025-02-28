@@ -11,10 +11,7 @@ This Python module provides an implementation of spherical harmonics using assoc
 ### Spherical Harmonics
 
 Spherical harmonics \( Y_{l}^{m}(\theta, \phi) \) are solutions to the Laplace equation in spherical coordinates. They are defined as:
-
-\[
-Y_{l}^{m}(\theta, \phi) = \sqrt{\frac{(2l + 1)}{4\pi} \frac{(l - m)!}{(l + m)!}} P_{l}^{m}(\cos \theta) e^{im\phi}
-\]
+![Spherical Harmonics Equation](https://latex.codecogs.com/svg.image?Y_{l}^{m}(\theta,\phi)=\sqrt{\frac{2l+1}{4\pi}\frac{(l-m)!}{(l+m)!}}P_{l}^{m}(\cos\theta)e^{im\phi})
 
 where:
 - \( l \) is the degree (azimuthal quantum number),
@@ -27,9 +24,7 @@ where:
 
 The associated Legendre polynomials \( P_{l}^{m}(x) \) are solutions to the associated Legendre differential equation. They are defined as:
 
-\[
-P_{l}^{m}(x) = (-1)^m (1 - x^2)^{m/2} \frac{d^m}{dx^m} P_l(x)
-\]
+![Associated Legendre Polynomial Equation](https://latex.codecogs.com/svg.image?P_{l}^{m}(x)=(-1)^m(1-x^2)^{m/2}\frac{d^m}{dx^m}P_l(x))
 
 where \( P_l(x) \) is the Legendre polynomial of degree \( l \).
 
