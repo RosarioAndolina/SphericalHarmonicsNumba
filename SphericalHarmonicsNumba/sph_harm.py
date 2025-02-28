@@ -100,15 +100,15 @@ def sph_harm(m, l, phi, theta):
     return Y
 
 # Test function to compare custom implementation with SciPy's sph_harm
-def test_specific_case(l, m, theta, phi):
+def test_specific_case(m, l, phi, theta):
     """
     Test the custom spherical harmonic implementation against SciPy's implementation.
     
     Parameters:
-        l (int): Degree of the spherical harmonic.
         m (int): Order of the spherical harmonic.
-        theta (float): Polar angle (in radians).
+        l (int): Degree of the spherical harmonic.
         phi (float): Azimuthal angle (in radians).
+        theta (float): Polar angle (in radians).
     """
     Y_custom = sph_harm(m, l, phi, theta)
     Y_scipy = sph_harm_scipy(m, l, phi, theta)
@@ -126,10 +126,10 @@ if __name__ == "__main__":
     phi = 0.0
 
     print(f'\nl = {l}, m = {m}, theta = {theta}, phi = {phi}')
-    test_specific_case(l, m, theta, phi)
+    test_specific_case(m, l, phi, theta)
 
     theta = np.pi / 4
     phi = np.pi / 2
 
     print(f'\nl = {l}, m = {m}, theta = {theta}, phi = {phi}')
-    test_specific_case(l, m, theta, phi)
+    test_specific_case(m, l, phi, theta)

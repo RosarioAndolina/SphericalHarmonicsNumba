@@ -51,7 +51,7 @@ pip install .
 
 ```python
 import numpy as np
-from sph_harm_module import sph_harm
+from sph_harm_module import sph_harm, test_specific_case
 
 l = 2
 m = 1
@@ -60,4 +60,6 @@ phi = np.pi / 2
 
 Y = sph_harm(m, l, phi, theta)
 print(Y)
+
+test_specific_case(m, l, phi, theta)
 ```
