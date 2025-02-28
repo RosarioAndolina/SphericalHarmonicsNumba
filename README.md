@@ -51,7 +51,7 @@ pip install .
 
 ```python
 import numpy as np
-from sph_harm_module import sph_harm, test_specific_case
+from SphericalHarmonicsNumba import sph_harm, test_specific_case
 
 l = 2
 m = 1
