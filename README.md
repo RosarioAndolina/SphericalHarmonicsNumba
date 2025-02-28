@@ -36,7 +36,7 @@ The module consists of the following functions:
 1. `factorial(n)`: Computes the factorial of an integer.
 2. `associated_legendre(l, m, x)`: Computes the associated Legendre polynomial \( P_{l}^{m}(x) \).
 3. `sph_harm(m, l, phi, theta)`: Computes the spherical harmonic \( Y_{l}^{m}(\theta, \phi) \).
-4. `test_specific_case(l, m, theta, phi)`: Compares the custom implementation with SciPy's `sph_harm`.
+4. `test_specific_case(m, l, phi, theta)`: Compares the custom implementation with SciPy's `sph_harm`.
 
 ## Installation
 
