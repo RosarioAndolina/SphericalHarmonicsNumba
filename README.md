@@ -49,6 +49,8 @@ To install the module, run the following command in the root directory of the pr
 
 ```bash
 pip install .
+```
+
 
 ### Usage example
 
@@ -63,4 +65,4 @@ phi = np.pi / 2
 
 Y = sph_harm(m, l, phi, theta)
 print(Y)
-
+```
