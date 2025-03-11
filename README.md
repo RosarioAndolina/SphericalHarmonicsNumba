@@ -10,32 +10,35 @@ This Python module provides an implementation of spherical harmonics using assoc
 
 ### Spherical Harmonics
 
-Spherical harmonics \( Y_{l}^{m}(\theta, \phi) \) are solutions to the Laplace equation in spherical coordinates. They are defined as:
+Spherical harmonics $Y_{l}^{m}(\theta, \phi)$ are solutions to the Laplace equation in spherical coordinates. They are defined as:
+
 ![Spherical Harmonics Equation](https://latex.codecogs.com/svg.image?Y_{l}^{m}(\theta,\phi)=\sqrt{\frac{2l+1}{4\pi}\frac{(l-m)!}{(l+m)!}}P_{l}^{m}(\cos\theta)e^{im\phi})
 
 where:
-- \( l \) is the degree (azimuthal quantum number),
-- \( m \) is the order (magnetic quantum number),
-- \( P_{l}^{m} \) is the associated Legendre polynomial,
-- \( \theta \) is the polar angle,
-- \( \phi \) is the azimuthal angle.
+- $l$ is the degree (azimuthal quantum number),
+- $m$ is the order (magnetic quantum number),
+- $P_{l}^{m}$ is the associated Legendre polynomial,
+- $\theta$ is the polar angle,
+- $\phi$ is the azimuthal angle.
 
 ### Associated Legendre Polynomials
 
-The associated Legendre polynomials \( P_{l}^{m}(x) \) are solutions to the associated Legendre differential equation. They are defined as:
+The associated Legendre polynomials $P_{l}^{m}(x)$ are solutions to the associated Legendre differential equation. They are defined as:
 
-![Associated Legendre Polynomial Equation](https://latex.codecogs.com/svg.image?P_{l}^{m}(x)=(-1)^m(1-x^2)^{m/2}\frac{d^m}{dx^m}P_l(x))
+$$
+P_{l}^{m}(x)=(-1)^m(1-x^2)^{m/2}\frac{d^m}{dx^m}P_l(x)
+$$
 
-where \( P_l(x) \) is the Legendre polynomial of degree \( l \).
+where $P_l(x)$ is the Legendre polynomial of degree $l$.
 
-The recursive algorithm used in this module computes \( P_{l}^{m}(x) \) efficiently.
+The recursive algorithm used in this module computes $P_{l}^{m}(x)$ efficiently.
 
 ## Code Overview
 
 The module consists of the following functions:
 1. `factorial(n)`: Computes the factorial of an integer.
-2. `associated_legendre(l, m, x)`: Computes the associated Legendre polynomial \( P_{l}^{m}(x) \).
-3. `sph_harm(m, l, phi, theta)`: Computes the spherical harmonic \( Y_{l}^{m}(\theta, \phi) \).
+2. `associated_legendre(l, m, x)`: Computes the associated Legendre polynomial $P_{l}^{m}(x)$.
+3. `sph_harm(m, l, phi, theta)`: Computes the spherical harmonic $Y_{l}^{m}(\theta, \phi)$.
 4. `test_specific_case(m, l, phi, theta)`: Compares the custom implementation with SciPy's `sph_harm`.
 
 ## Installation
